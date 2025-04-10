@@ -1,0 +1,11 @@
+{
+    "description": "My Portfolio",
+    "repo": "https://github.com/sampath99999/sampath99999.github.io",
+    "owner": {
+        "username": "sampath99999",
+        "email": "sampathbandla199@gmail.com"
+    },
+    "record": {
+        "CNAME": "sampath99999.github.io"
+    }
+}
