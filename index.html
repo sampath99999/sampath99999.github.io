@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sampath Bandla - Senior Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body class="bg-[#0a192f] text-gray-100">
+    <!-- Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-[#0a192f]/80 backdrop-blur-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-[#64ffda]">SB</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 w-full bg-[#0a192f] p-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 space-y-6">
+                    <h2 class="text-[#64ffda] text-xl">Hi, my name is</h2>
+                    <h1 class="text-5xl md:text-7xl font-bold">Sampath Bandla.</h1>
+                    <h2 class="text-4xl md:text-6xl font-bold text-gray-400">I build things for the web.</h2>
+                    <p class="text-gray-400 max-w-lg">
+                        I'm a Senior Full Stack Developer specializing in building exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products at Pixelvide.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#contact" class="btn-primary text-sm sm:text-base py-2 sm:py-4 px-4 sm:px-8 text-center">Get in Touch</a>
+                        <a href="#projects" class="btn-secondary text-sm sm:text-base py-2 sm:py-4 px-4 sm:px-8 text-center">View Projects</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-10 md:mt-0">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-96 md:h-96 rounded-full bg-[#64ffda]/20 animate-pulse"></div>
+                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            <div class="w-48 h-48 md:w-72 md:h-72 rounded-full bg-gradient-to-r from-[#64ffda] to-[#0a192f] animate-spin-slow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-2xl text-[#64ffda]"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                <span class="text-[#64ffda]">01.</span> About Me
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <p class="text-gray-400">
+                        Hello! I'm Sampath, a Senior Full Stack Developer with over 3 years of experience. I specialize in building high-impact applications and managing multiple projects simultaneously.
+                    </p>
+                    <p class="text-gray-400">
+                        I believe in delivering impact through problem solving and innovation. Rather than measuring expertise by years alone, I let my work speak for itself.
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <div class="skill-card">
+                            <i class="fab fa-react text-[#64ffda]"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-node-js text-[#64ffda]"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-angular text-[#64ffda]"></i>
+                            <span>Angular</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-database text-[#64ffda]"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-php text-[#64ffda]"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-laravel text-[#64ffda]"></i>
+                            <span>Laravel</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-database text-[#64ffda]"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-database text-[#64ffda]"></i>
+                            <span>Redis</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-docker text-[#64ffda]"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-aws text-[#64ffda]"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-git-alt text-[#64ffda]"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-js text-[#64ffda]"></i>
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative flex items-center justify-center">
+                    <div class="w-full max-w-md h-[500px] rounded-lg overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-r from-[#64ffda] to-transparent opacity-20 z-10"></div>
+                        <img src="images/me.jpg" alt="Profile" class="w-full h-full object-cover object-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                <span class="text-[#64ffda]">02.</span> Where I've Worked
+            </h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3 class="text-xl font-bold text-[#64ffda]">Senior Full Stack Developer</h3>
+                            <h4 class="text-gray-400">Pixelvide – Hyderabad, TS</h4>
+                            <p class="text-sm text-gray-500">Jan 2023 - Present</p>
+                            <ul class="list-disc list-inside mt-4 space-y-2 text-gray-400">
+                                <li>Leading the development of a machine learning model for building detection</li>
+                                <li>Integrated OpenLayers for geospatial data visualization</li>
+                                <li>Developed the Counselling Management System for Government of Telangana</li>
+                                <li>Led training sessions in the CodeSchool Internship Program</li>
+                                <li>Designed and optimized the database, improving efficiency by 40%</li>
+                                <li>Successfully hosted the Dhairya production environment on in-premises servers</li>
+                                <li>Led the development of an AI-based portal (GeoServer) to help the government detect illegal buildings</li>
+                                <li>Created a machine learning model to detect buildings from Very High Resolution (VHR) satellite images</li>
+                                <li>Integrated geographic data and maps into the GeoServer system</li>
+                                <li>Contributed to IFMIS for Telangana, improving system reliability and efficiency</li>
+                                <li>Optimized API calls in the Ekuber Project, reducing server load by 20%</li>
+                                <li>Independently developed demo websites (ORMS and HRMS) for the Odisha Government within 4 weeks</li>
+                                <li>Actively participated in Pixelvide Bootcamps, enhancing skills in PostgreSQL indexing</li>
+                                <li>Managed concurrent involvement in 4 projects alongside the CodeSchool program</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3 class="text-xl font-bold text-[#64ffda]">Full Stack Intern</h3>
+                            <h4 class="text-gray-400">Pixelvide – Hyderabad, TS</h4>
+                            <p class="text-sm text-gray-500">Oct 2022 - Jan 2023</p>
+                            <ul class="list-disc list-inside mt-4 space-y-2 text-gray-400">
+                                <li>Engaged in an immersive internship experience with Pixelvide's CodeSchool</li>
+                                <li>Distinguished as the inaugural intern from the 1.0 cohort, achieving a perfect task completion rate</li>
+                                <li>Successfully executed 12 tasks, navigated 3 tests, and excelled in 2 interviews</li>
+                                <li>Created a VS Code Extension called CDNBase for CDN Imports as Snippets, achieving 100+ downloads</li>
+                                <li>Completed the "Clean Code" course by Uncle Bob through 6 videos</li>
+                                <li>Studied and implemented PSR Standards and Laravel 10 Documentation</li>
+                                <li>Created a directive-based AngularJS main project</li>
+                                <li>Received appreciation from senior employees for maintaining a standard coding approach</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3 class="text-xl font-bold text-[#64ffda]">Full Stack Developer | Freelancer</h3>
+                            <h4 class="text-gray-400">ProCorp – Hyderabad, TS</h4>
+                            <p class="text-sm text-gray-500">Jan 2022 - Dec 2022</p>
+                            <ul class="list-disc list-inside mt-4 space-y-2 text-gray-400">
+                                <li>Solely managed the backend development for the Gurumaharaj project, utilizing NodeJS, ExpressJS, and MongoDB</li>
+                                <li>Designed a comprehensive structure for the main module, incorporating Video, Audio, and Webcam Integration using WebRTC technology in React JS</li>
+                                <li>Conducted interviews for senior Full Stack Developers for the Bangladesh branch</li>
+                                <li>Managed the entire team of 3 developers for MERN stack projects</li>
+                                <li>Worked on setting up payments through Paytm, took care of the Paytm dashboard, and made sure payments were smooth using APIs</li>
+                                <li>Managed the integration of S3 for easy file storage and retrieval</li>
+                                <li>Helped new team members from Bangladesh get on board smoothly by leading a Knowledge Transfer session</li>
+                                <li>Ensured the reliability of Node.js backend components like Routes, Controllers, Services, and Middleware, contributing to a 30% improvement in security</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                <span class="text-[#64ffda]">03.</span> Some Things I've Built
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="text-xl font-bold text-[#64ffda]">Billwise</h3>
+                        <p class="text-gray-400 mt-2">
+                            A comprehensive billing management application for customers, built with Next.js, Tailwind CSS, and Shadcn UI components.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Shadcn UI</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                        <div class="mt-4">
+                            <img src="images/billwise.png" alt="Billwise Project" class="w-full h-full object-cover rounded-md">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="text-xl font-bold text-[#64ffda]">GeoScan</h3>
+                        <p class="text-gray-400 mt-2">
+                            Machine learning model for building detection from satellite imagery, developed for HYDRA, Government of Telangana.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenLayers</span>
+                            <span class="tech-tag">Machine Learning</span>
+                        </div>
+                        <div class="mt-4">
+                            <img src="images/geoscan.png" alt="GeoScan Project" class="w-full h-full object-cover rounded-md">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="text-xl font-bold text-[#64ffda]">Made For Match</h3>
+                        <p class="text-gray-400 mt-2">
+                            Bureau profiles management system for matchmaking services, built with Bootstrap, HTML, and PHP.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">PHP</span>
+                        </div>
+                        <div class="mt-4">
+                            <img src="images/madeformatch.png" alt="Made For Match Project" class="w-full h-full object-cover rounded-md">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="text-xl font-bold text-[#64ffda]">IFMIS</h3>
+                        <p class="text-gray-400 mt-2">
+                            Integrated Financial Management Information System for the Government of Telangana, improving system reliability and efficiency.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="mt-4">
+                            <img src="images/ifmis.png" alt="IFMIS Project" class="w-full h-full object-cover rounded-md">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                <span class="text-[#64ffda]">04.</span> Get In Touch
+            </h2>
+            <div class="max-w-2xl mx-auto text-center">
+                <p class="text-gray-400 mb-8">
+                    I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                </p>
+                <a href="mailto:sampathbandla199@gmail.com" class="btn-primary">Say Hello</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-gray-400">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://linkedin.com/in/your-profile" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/your-profile" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:sampathbandla199@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p>Designed & Built by Sampath Bandla</p>
+            <p class="text-sm mt-2">© 2024 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,7 @@
+Please add the following images to this directory:
+
+1. me.jpg - Your profile picture
+2. billwise.jpg - Screenshot of the Billwise project
+3. madeformatch.jpg - Screenshot of the Made For Match project
+
+These images will be displayed in your portfolio website. 
